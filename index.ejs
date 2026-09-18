@@ -1,0 +1,55 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory Form</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <h1>Inventory Form</h1>
+        <p class="subtitle">Inventory Details</p>
+        <form action="/inventory" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Product_Name">Item Name</label>
+                    <input
+                        type="text"
+                        id="Product_Name"
+                        name="Product_Name"
+                        placeholder="Enter item name"
+                        required
+                    >
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Price">Price</label>
+                    <input
+                        type="text"
+                        id="Price"
+                        name="Price"
+                        placeholder="Enter price"
+                        required
+                    >
+                </div>
+                <div class="form-row">
+                <div class="form-group">
+                    <label for="Quantity">Quantity</label>
+                    <input
+                        type="text"
+                        id="Quantity"
+                        name="Quantity"
+                        placeholder="Enter quantity"
+                        required
+                    >
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">
+                Submit inventory
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
